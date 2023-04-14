@@ -176,3 +176,47 @@ body {
     background-color: var(--botao-hover);
     color: var(--fundo-preto)
 }
+
+@media screen and (max-width: 768px) {
+
+    .principal {
+        margin: 0;
+        text-align: center;
+    }
+
+    .container {
+        display: block;
+        background-image: none;     
+    }
+
+    .container__imagem {
+        width: 50vh;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 1em;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vh;
+        margin: 0;
+    }
+
+    .imagem__terciario {
+        width: 50vh;
+        margin: 0;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }    
+
+    .rodape__lista {
+        display: block;
+    }
+}
