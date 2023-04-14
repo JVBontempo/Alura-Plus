@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+
+    --cinza-secundario: #C0C0C0;
+
+    --botao-azul: #3a93ff;
+
+    --fundo-preto: #00030C;
+
+    --botao-hover: #a7caf6;
+}
+
+body {
+    background-color: var(--fundo-preto);
+    color: var(--branco-principal)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-family: 'Inter', sans-serif;
+    color: var(--cinza-secundario);
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 70%;
+    margin-left: 4.375em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+
+.descricao__titulo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #F9F9F9;
+}
+
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.imagem__terciario {
+    margin-left: 4.375em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--branco-principal);
+    margin: 5em 0;
+}
+
+.rodape {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+    text-decoration: none;
+    margin: 2.5em 0;
+}
+
+.lista__link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;;
+}
+
+.ancora__rodape {
+    text-decoration: none;
+    color: var(--branco-principal)
+}
+
+.rodape__texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    color: var(--cinza-secundario);
+    margin: 1em 3em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-hover);
+    color: var(--fundo-preto)
+}
